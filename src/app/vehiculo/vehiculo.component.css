@@ -1,0 +1,9 @@
+  .custom-table th {
+    color: #fff;
+    padding: 8px;
+    background-color: rgb(50, 50, 50);
+  }
+
+  .custom-table td:first-child {
+    font-weight: bold;
+  }

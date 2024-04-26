@@ -22,4 +22,12 @@ export class VehiculoComponent implements OnInit {
     this.getCarsList();
   }
 
+  getDistinctBrands(): String[] {
+    return Array.from(new Set(this.vehiculos.map(vehiculo => vehiculo.marca)));
+  }
+
+  getCountbyBrand(marca:String){
+    return this.vehiculos.filter(vehiculo => vehiculo.marca === marca ).length;
+  }
+
 }

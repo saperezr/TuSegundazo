@@ -1,6 +1,6 @@
 <div class="container-fluid">
   <div class="col-6">
-    <table class="table">
+    <table class="table custom-table">
       <thead>
         <tr>
           <th class="h4">#</th>
@@ -22,6 +22,15 @@
           </td>
           <td>
             <dd>{{v.modelo}}</dd>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table>
+      <tbody>
+        <tr *ngFor="let marca of getDistinctBrands()">
+          <td>
+            <dd>Total {{marca}}: {{getCountbyBrand(marca)}}</dd>
           </td>
         </tr>
       </tbody>
