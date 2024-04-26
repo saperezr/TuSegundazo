@@ -1,0 +1,26 @@
+<div class="container-fluid">
+  <div class="col-6">
+    <table class="table">
+      <thead>
+        <tr>
+          <th class="h4">Marca</th>
+          <th class="h4">Modelo</th>
+          <th class="h4">Color</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let c of cars">
+          <td>
+            <dd>{{c.marca}}</dd>
+          </td>
+          <td>
+            <dd>{{c.modelo}}</dd>
+          </td>
+          <td>
+            <dd>{{c.color}}</dd>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
