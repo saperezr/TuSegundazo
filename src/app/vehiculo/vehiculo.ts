@@ -1,4 +1,4 @@
-export class Car {
+export class Vehiculo {
   id!: number;
   marca!: String;
   linea!: String;

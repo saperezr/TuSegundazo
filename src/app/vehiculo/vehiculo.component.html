@@ -3,21 +3,25 @@
     <table class="table">
       <thead>
         <tr>
+          <th class="h4">#</th>
           <th class="h4">Marca</th>
+          <th class="h4">Linea</th>
           <th class="h4">Modelo</th>
-          <th class="h4">Color</th>
         </tr>
       </thead>
       <tbody>
-        <tr *ngFor="let c of cars">
+        <tr *ngFor="let v of vehiculos">
           <td>
-            <dd>{{c.marca}}</dd>
+            <dd>{{v.id}}</dd>
           </td>
           <td>
-            <dd>{{c.modelo}}</dd>
+            <dd>{{v.marca}}</dd>
           </td>
           <td>
-            <dd>{{c.color}}</dd>
+            <dd>{{v.linea}}</dd>
+          </td>
+          <td>
+            <dd>{{v.modelo}}</dd>
           </td>
         </tr>
       </tbody>

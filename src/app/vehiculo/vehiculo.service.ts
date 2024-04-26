@@ -1,17 +1,17 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { Car } from './car';
+import { Vehiculo } from './vehiculo';
 import { environment } from '../../environments/environment.development';
 
 @Injectable({
     providedIn: 'root'
   })
-export class CarService {
+export class VehiculoService {
 private apiUrl = environment.baseUrl;
 
 constructor(private http: HttpClient) { }
-    getCars(): Observable<Car[]> {
-        return this.http.get<Car[]>(this.apiUrl);
+    getCars(): Observable<Vehiculo[]> {
+        return this.http.get<Vehiculo[]>(this.apiUrl);
     }
 }

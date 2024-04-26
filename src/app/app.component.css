@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.banner {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+}
+
+.banner-content {
+    display: flex;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.text-container {
+    text-align: left;
+    flex: 1;
+}
+
+.text-container h1 {
+    font-size: 28px;
+    color: #fff;
+    margin: 0;
+    padding: 10px;
+}
+
+.text-container p {
+    font-size: 20px;
+    color: #fff;
+    margin: 0;
+    padding: 10px;
+}
+
+.white-text {
+    color: #fff;
+}
+
+.blue-background {
+    background-color: #007bff;
+}
+
+.black-background {
+    background-color: #000;
+}
+
+.banner img {
+    width: 400px;
+}
